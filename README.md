@@ -13,7 +13,7 @@ The project utilizes Scala, Spark, and Beast framework to merge a spatial datase
 
 ---
 
-## Prerequisites
+### Prerequisites
 1. Downloaded the datasets of [ebird](https://star.cs.ucr.edu/?eBird#center=33.9460,-117.3995&zoom=13) as geoJSON and [riversideParks](https://star.cs.ucr.edu/?Riverside/Parks#center=33.9068,-117.4399&zoom=12) as shapeFile. Both these files need to be in the root directory of the project i.e where pom.xml is present
 
 ---
