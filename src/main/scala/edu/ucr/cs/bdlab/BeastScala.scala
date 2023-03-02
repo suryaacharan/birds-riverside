@@ -32,7 +32,7 @@ object BeastScala {
       val birdsInParkDF: DataFrame =birdsInParkRDD.map({ case (park, bird) => Feature.append(park, 1, "Bird")}).toDataFrame(sparkSession)
       val result : DataFrame= birdsInParkDF.groupBy("PARK_NAME","g").sum("Bird").alias("Bird count")
 
-      result.toSpatialRDD.coalesce(1).saveAsShapefile("birdsInPark")
+      result.toSpatialRDD.coalesce(1).saveAsGeoJSON("birdsInPark")
     } finally {
       sparkSession.stop()
       CRSServer.stopServer()
