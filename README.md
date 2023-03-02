@@ -37,14 +37,14 @@ The project utilizes Scala, Spark, and Beast framework to merge a spatial datase
 3. For each row in the above birdsInParkRDD , added a column name called Bird with value and converted it to a spatial RDD preserving the park details and value 1 for every bird observed. i.e for every bird observed in a park there will be a row. Converted it to a dataframe
 
      ```scala
-            val birdsInParkDF: DataFrame =birdsInParkRDD.map({ case (park, bird) => Feature.append(park, 1, "Bird")}).toDataFrame(sparkSession)
+        val birdsInParkDF: DataFrame =birdsInParkRDD.map({ case (park, bird) => Feature.append(park, 1, "Bird")}).toDataFrame(sparkSession)
     ```
 
 4. Performed a group by operation on "PARK_NAME" i.e to join all rows of bird sightings by the park's name, preserved the geographic info and created a summation of all the birds to store as result data frame. Wrote the output from this result to a GeoJSON output file.
      ```scala
-            val result : DataFrame= birdsInParkDF.groupBy("PARK_NAME","g").sum("Bird").alias("Bird count")
+        val result : DataFrame= birdsInParkDF.groupBy("PARK_NAME","g").sum("Bird").alias("Bird count")
 
-            result.toSpatialRDD.coalesce(1).saveAsGeoJSON("birdsInPark")
+        result.toSpatialRDD.coalesce(1).saveAsGeoJSON("birdsInPark")
     ```
 
 5. Imported the file in QGIS, generated a choropleth map by configuring various settings and setting the right number of classes to understand the map better.
