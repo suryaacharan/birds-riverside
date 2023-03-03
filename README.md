@@ -34,15 +34,15 @@ The project utilizes Scala, Spark, and Beast framework to merge a spatial datase
       val birdsInParkRDD: RDD[(IFeature, IFeature)] = riversideParkData.spatialJoin(birdDataPoints)
     ```
 
-3. For each row in the above birdsInParkRDD , added a column name called Bird with value and converted it to a spatial RDD preserving the park details and value 1 for every bird observed. i.e for every bird observed in a park there will be a row. Converted it to a dataframe
+3. For each row in the above birdsInParkRDD , added a column name called Bird with value of OBSERVATION COUNT column from bird feature(data). Since, it was of type string, parsed it as an integer and defaulted value if incase there are exceptions. eg. Some records have entry "X" in Observation count. Also made it null-safe. Converted it to a dataframe
 
      ```scala
-        val birdsInParkDF: DataFrame =birdsInParkRDD.map({ case (park, bird) => Feature.append(park, 1, "Bird")}).toDataFrame(sparkSession)
+        val birdsInParkDF: DataFrame =birdsInParkRDD.map({ case (park, bird) => Feature.append(park, Try(bird.getAs[String]("OBSERVATION COUNT").toInt).getOrElse(0), "Bird",IntegerType)}).toDataFrame(sparkSession)
     ```
 
 4. Performed a group by operation on "PARK_NAME" i.e to join all rows of bird sightings by the park's name, preserved the geographic info and created a summation of all the birds to store as result data frame. Wrote the output from this result to a GeoJSON output file.
      ```scala
-        val result : DataFrame= birdsInParkDF.groupBy("PARK_NAME","g").sum("Bird").alias("Bird count")
+        val result : DataFrame= birdsInParkDF.groupBy("PARK_NAME","g").sum("Bird").as("Bird Observations")
 
         result.toSpatialRDD.coalesce(1).saveAsGeoJSON("birdsInPark")
     ```
@@ -55,5 +55,8 @@ Output file -
 [Output GeoJSON](./output.geojson)
 
 Choropleth Map
-![Choropleth Map](./choropleth.png)
+![Choropleth Map](./BirdPark.png)
+
+Choropleth Map with Riverside topography overlay
+![Choropleth Map](./BirdPark2.png)
 ---

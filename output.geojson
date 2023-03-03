@@ -4,7 +4,7 @@
     "type" : "Feature",
     "properties" : {
       "PARK_NAME" : "FAIRMOUNT REGIONAL PARK",
-      "sum(Bird)" : 22859
+      "sum(Bird)" : 328802
     },
     "geometry" : {
       "type" : "MultiPolygon",
@@ -15,7 +15,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "SANTA ANA RIVER WILDLIFE AREA",
-    "sum(Bird)" : 1047
+    "sum(Bird)" : 8669
   },
   "geometry" : {
     "type" : "MultiPolygon",
@@ -26,7 +26,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "CASTLEVIEW PARK",
-    "sum(Bird)" : 447
+    "sum(Bird)" : 2242
   },
   "geometry" : {
     "type" : "Polygon",
@@ -37,7 +37,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "HIDDEN VALLEY WILDLIFE AREA",
-    "sum(Bird)" : 221
+    "sum(Bird)" : 689
   },
   "geometry" : {
     "type" : "Polygon",
@@ -48,7 +48,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "RANCHO JURUPA PARK",
-    "sum(Bird)" : 12115
+    "sum(Bird)" : 1189912
   },
   "geometry" : {
     "type" : "Polygon",
@@ -59,7 +59,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "MOUNT RUBIDOUX PARK",
-    "sum(Bird)" : 879
+    "sum(Bird)" : 6192
   },
   "geometry" : {
     "type" : "Polygon",
@@ -70,7 +70,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "MARTHA MCLEAN/ANZA NARROWS",
-    "sum(Bird)" : 819
+    "sum(Bird)" : 3570
   },
   "geometry" : {
     "type" : "Polygon",
@@ -81,7 +81,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "PATTERSON PARK",
-    "sum(Bird)" : 11
+    "sum(Bird)" : 0
   },
   "geometry" : {
     "type" : "Polygon",
@@ -92,7 +92,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "DON DERR PARK",
-    "sum(Bird)" : 103
+    "sum(Bird)" : 443
   },
   "geometry" : {
     "type" : "Polygon",
@@ -103,7 +103,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "NEWMAN PARK",
-    "sum(Bird)" : 2
+    "sum(Bird)" : 3
   },
   "geometry" : {
     "type" : "Polygon",
@@ -125,7 +125,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "CALIFORNIA CITRUS STATE HISTORIC PARK",
-    "sum(Bird)" : 2161
+    "sum(Bird)" : 19898
   },
   "geometry" : {
     "type" : "Polygon",
@@ -136,7 +136,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "SYCAMORE CANYON WILDERNESS PARK",
-    "sum(Bird)" : 4116
+    "sum(Bird)" : 16152
   },
   "geometry" : {
     "type" : "MultiPolygon",
@@ -147,7 +147,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "ISLANDER PARK",
-    "sum(Bird)" : 94
+    "sum(Bird)" : 642
   },
   "geometry" : {
     "type" : "Polygon",
@@ -158,7 +158,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "BOX SPRINGS PARK",
-    "sum(Bird)" : 3653
+    "sum(Bird)" : 11103
   },
   "geometry" : {
     "type" : "Polygon",
@@ -169,7 +169,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "SYCAMORE HIGHLANDS PARK",
-    "sum(Bird)" : 22
+    "sum(Bird)" : 75
   },
   "geometry" : {
     "type" : "Polygon",
@@ -180,7 +180,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "MOUNT VERNON PARK",
-    "sum(Bird)" : 79
+    "sum(Bird)" : 268
   },
   "geometry" : {
     "type" : "MultiPolygon",
@@ -191,7 +191,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "ANDULKA PARK",
-    "sum(Bird)" : 6639
+    "sum(Bird)" : 34962
   },
   "geometry" : {
     "type" : "Polygon",
@@ -213,7 +213,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "TEQUESQUITE PARK",
-    "sum(Bird)" : 2769
+    "sum(Bird)" : 16433
   },
   "geometry" : {
     "type" : "Polygon",
@@ -224,7 +224,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "LOUIS ROBIDOUX PARK",
-    "sum(Bird)" : 2301
+    "sum(Bird)" : 11901
   },
   "geometry" : {
     "type" : "Polygon",
@@ -235,7 +235,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "RUTLAND PARK",
-    "sum(Bird)" : 38
+    "sum(Bird)" : 88
   },
   "geometry" : {
     "type" : "Polygon",
@@ -246,7 +246,7 @@
   "type" : "Feature",
   "properties" : {
     "PARK_NAME" : "ORANGE TERRACE COMMUNITY PARK",
-    "sum(Bird)" : 22
+    "sum(Bird)" : 106
   },
   "geometry" : {
     "type" : "Polygon",
